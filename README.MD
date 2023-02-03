@@ -10,6 +10,8 @@ Well, **a_pandas_ex_numexpr** adds different methods to the DataFrame/Series cla
 
 **Let the numbers speak for themselves**
 
+## pip install a-pandas-ex-numexpr
+
 ## How to import / use a_pandas_ex_numexpr
 
 ```python
