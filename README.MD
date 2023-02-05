@@ -2,7 +2,7 @@
 
 DataFrame.query has never worked for me. On my PC, it has been extremely slow when using small DataFrames, and only a little bit, if at all, faster when using huge DataFrames. 
 
-DataFrame.query uses pd.eval, and pd.eval uses numexpr. The weird thing is that numexpr is insanely fast when it is used against a DataFrame, but nor pd.eval neither DataFrame.query aren’t. First I thought there was a problem with my Pandas/environment configuration, but then I read on the[ Pandas page](https://pandas.pydata.org/docs/user_guide/indexing.html#performance-of-query):
+DataFrame.query uses pd.eval, and pd.eval uses numexpr. The weird thing is that numexpr is insanely fast when it is used against a DataFrame, but nor pd.eval neither DataFrame.query are. First I thought there was a problem with my Pandas/environment configuration, but then I read on the[ Pandas page](https://pandas.pydata.org/docs/user_guide/indexing.html#performance-of-query):
 
 _You will only see the performance benefits of using the numexpr engine with DataFrame.query() if your frame has more than approximately 200,000 rows._
 
